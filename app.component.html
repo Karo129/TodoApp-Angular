@@ -1,0 +1,4 @@
+<div class="wrapper">
+  <app-header (newTodo)="enterTask($event)"></app-header>
+  <app-list-of-tasks [createdTask]="listTasks" (deleteTodoTask)="eliminateTask($event)"></app-list-of-tasks>
+</div>

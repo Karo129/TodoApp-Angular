@@ -1,0 +1,12 @@
+<div class="todo">
+  <h3>List of tasks</h3>
+  <p class="error-info"></p>
+  <ul *ngFor="let task of createdTask; let i =index">
+    <li [class.completed]="task.isCompleted">{{ task.newTask }}
+      <div class="tools">
+        <button class="complete" (click)="toggleDone(task)">DONE</button>
+        <button class="delete" (click)="deleteTask(i)">DELETE</button>
+      </div>
+    </li>
+  </ul>
+</div>
